@@ -1,6 +1,7 @@
 def hello(name):
     greet = "Hi! " + name
-    print(greet)
+    print(greet) # Side effect
+
 
 hello("Sung")
 hello("Jenny")
