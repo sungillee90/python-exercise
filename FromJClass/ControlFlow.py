@@ -11,12 +11,22 @@
 # website_welcome("Sung", 30)
 
 # refactor, use boolean
-def website_welcome(name, age):
-    if age >= 18:
-        print("Welcome " + name + "!")
-    else:
-        print("Opps, you are too young to proceed to next level")
-        years_left = 18 - age
-        print("Wait another " + str(years_left) + " years to become a member")
+# def website_welcome(name, age):
+#     if age >= 18:
+#         print("Welcome " + name + "!")
+#     else:
+#         print("Opps, you are too young to proceed to next level")
+#         years_left = 18 - age
+#         print("Wait another " + str(years_left) + " years to become a member")
 
-website_welcome("Sung", 10)
+def can_watch_movie(age, with_parents):
+    if age >= 17:
+        return True
+    else:
+        if with_parents:
+            return True
+        else:
+            return False
+
+
+can_watch_movie(15, False)
