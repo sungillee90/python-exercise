@@ -1,8 +1,8 @@
-def eat_apples(num_of_apples):
+def eat_apples(num_of_apples, on_diet):
     apples_remaining = num_of_apples
 
     # Loop
-    while apples_remaining > 0:
+    while apples_remaining > 0 and not on_diet:
         print("Remaining apple = " + str(apples_remaining))
         apples_remaining -= 1
         print("Thank you!")
@@ -19,4 +19,4 @@ def eat_apples(num_of_apples):
 
 
 
-eat_apples(5)
+eat_apples(5, False)
