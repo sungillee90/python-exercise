@@ -16,9 +16,7 @@ def website_welcome(name, age):
         print("Welcome " + name + "!")
     else:
         print("Opps, you are too young to proceed to next level")
-    # greetings = "Welcom " + name + "!"
-    # print(greetings)
-    # year_born = 2020 - age
-    # print("You were born in " + str(year_born))
+        years_left = 18 - age
+        print("Wait another " + str(years_left) + " years to become a member")
 
 website_welcome("Sung", 10)
