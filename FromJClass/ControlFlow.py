@@ -2,10 +2,23 @@
 # EX) Are you 18 or up?
 # Y redirect to the website, N do not give the access.
 
-def website_welcome(name, age):
-    greetings = "Welcom " + name + "!"
-    print(greetings)
-    year_born = 2020 - age
-    print("You were born in " + str(year_born))
+# def website_welcome(name, age):
+#     greetings = "Welcom " + name + "!"
+#     print(greetings)
+#     year_born = 2020 - age
+#     print("You were born in " + str(year_born))
+#
+# website_welcome("Sung", 30)
 
-website_welcome("Sung", 30)
+# refactor, use boolean
+def website_welcome(name, age):
+    if age >= 18:
+        print("Welcome " + name + "!")
+    else:
+        print("Opps, you are too young to proceed to next level")
+    # greetings = "Welcom " + name + "!"
+    # print(greetings)
+    # year_born = 2020 - age
+    # print("You were born in " + str(year_born))
+
+website_welcome("Sung", 10)
