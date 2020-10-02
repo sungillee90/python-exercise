@@ -20,13 +20,17 @@
 #         print("Wait another " + str(years_left) + " years to become a member")
 
 def can_watch_movie(age, with_parents):
+    # method 1 if , else statement
     if age >= 17:
         return True
-    else:
-        if with_parents:
-            return True
-        else:
-            return False
-
+    # else:
+    #     if with_parents:
+    #         return True
+    #     else:
+    #         return False
+    # method 2 if elseif (elif)
+    elif age < 17 and with_parents:
+        print("Yes, you can watch it!")
+        return True
 
 can_watch_movie(15, False)
