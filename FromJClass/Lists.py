@@ -19,13 +19,26 @@ def print_list(lst):
     while i < len(lst):
         print(lst[i])
         i += 1
-    return
+    print("끝")
 """
 print_list([1,2,3])
 1
 2
 3
 """
-print_list([1,2,4,5,6165])
+print_list([1, 2, 4, 5, 6165])
 
 #P2: Write a function outputs a list of numbers from 0 to n
+
+def list_num(n):
+    i = 0
+    new_list = []
+    while i <= n:
+        new_list.append(i)
+        i += 1
+    return new_list
+
+list_num(5)
+print(list_num(5))
+type(list_num(3))
+print(type(list_num(3)))
