@@ -34,7 +34,8 @@ def list_num(n):
     i = 0
     new_list = []
     while i <= n:
-        new_list.append(i)
+        if i % 2 == 0:
+            new_list.append(i)
         i += 1
     return new_list
 
