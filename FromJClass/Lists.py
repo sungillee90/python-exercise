@@ -6,5 +6,7 @@ def list_number():
     print(lucky_numbers[-1]) #10
     print(lucky_numbers[-3]) #7
     print(type(lucky_numbers))
+    print(lucky_numbers.append(15))
+    print(lucky_numbers)
 
 list_number()
