@@ -1,5 +1,5 @@
 
-flavors = ["valinna", "strawberry", "chocolate", "mint", "banana", "mix"]
+flavors = ["vanilla", "strawberry", "chocolate", "mint", "banana", "mix"]
 
 i = 0
 
@@ -8,3 +8,5 @@ while i < len(flavors):
     i += 1
 
 
+for flavor in flavors:
+    print(flavor)
