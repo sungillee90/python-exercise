@@ -4,6 +4,7 @@ def has_even_number(lst):
     for num in lst:
         if num % 2 == 0:
             has_even = True
+            break
     print(has_even)
     return has_even
 
