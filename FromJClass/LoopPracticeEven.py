@@ -8,4 +8,4 @@ def has_even_number(lst):
     print(has_even)
     return has_even
 
-has_even_number([1, 1, 3])
+has_even_number([1, 2, 3])
