@@ -7,7 +7,7 @@ nested_loop()
 
 def print_pyramid(n):
     for i in range(n):
-        line_to_print = ""
+        line_to_print = "o"
         for j in range(i):
             line_to_print += "o"
         print(line_to_print)
