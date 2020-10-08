@@ -4,11 +4,28 @@ r3 = [7, 8, 9]
 
 matrix = [r1, r2, r3]
 
-matrix_two = [[1, 2, 3],
-              [1, 2, 4],
-              [4, 5, 8]]
+matrix_two = [[1, 2, 3, 5],
+              [1, 2, 4, 6],
+              [4, 5, 8, 7]]
 
 print(matrix)
 print(matrix_two)
+#  matrix [Row][Column] [0] [1] [2]
+print(matrix_two[2][1])
+
+# print all of the single element
 def print_matrix(m):
-    return
+    if m == []:
+        return
+    num_rows = len(m)
+    num_cols = len(m[0])
+
+    for row in m:
+        for num in row:
+            print(num)
+
+    print(num_rows)
+    print(num_cols)
+
+
+print_matrix(matrix_two)
