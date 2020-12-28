@@ -22,5 +22,13 @@ def solve_maze(maze):
 solve_maze(maze)
 
 def solve_maze_helper(maze, sol, pos_row, pos_col):
+    # Get size of the maze
     num_row = len(maze)
     num_col = len(maze[0])
+
+    # Base Cases
+
+    # Robot is already home
+    # list starts 0, num of row 1 2 3 4
+    if pos_row == num_row - 1 and pos_col == num_col - 1:
+        return sol
