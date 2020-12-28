@@ -39,3 +39,20 @@ def solve_maze_helper(maze, sol, pos_row, pos_col):
     # Is on an obstacle (X)
     if maze[pos_row][pos_col] == "X":
         return None
+
+    # Recursive Case
+
+    # Try going Right
+    sol.append("r")
+    sol_going_right = solve_maze_helper(maze, sol, pos_row, pos_col + 1)
+    if sol_going_right is not None:
+        return sol_going_right
+
+    # Pretend going Right is not answer, BACKTRACK, trying going down
+    sol.pop()
+    sol.append("d")
+    sol_going_down = solve_maze_helper(maze, sol, pos_row + 1, pos_col)
+    if sol_going_down is not None:
+        return sol_going_down
+
+    # No soln, impossible, BACKTRACKING
