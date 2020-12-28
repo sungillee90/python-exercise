@@ -16,10 +16,13 @@ print(maze)
 print_maze(maze)
 
 def solve_maze(maze):
-    return
+    if len(maze) < 1:
+        return None
+    if len(maze[0]) < 1:
+        return None
+    return print(solve_maze_helper(maze, [], 0, 0))
+    #solve_maze_helper(maze, [], 0, 0)
 
-
-solve_maze(maze)
 
 def solve_maze_helper(maze, sol, pos_row, pos_col):
     # Get size of the maze
@@ -56,3 +59,9 @@ def solve_maze_helper(maze, sol, pos_row, pos_col):
         return sol_going_down
 
     # No soln, impossible, BACKTRACKING
+    sol.pop()
+    return None
+
+    print(solve_maze_helper(maze, [], 0, 0))
+    print(solve_maze_helper(maze, [], 2, 0))
+    print(solve_maze(maza))
