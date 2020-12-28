@@ -36,3 +36,6 @@ def solve_maze_helper(maze, sol, pos_row, pos_col):
     # Out of bounds
     if pos_row >= num_row or pos_col >= num_col:
         return None
+    # Is on an obstacle (X)
+    if maze[pos_row][pos_col] == "X":
+        return None
